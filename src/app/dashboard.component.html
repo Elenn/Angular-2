@@ -1,0 +1,11 @@
+<h3>Top Products</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let product of products"  [routerLink]="['/productitem', product.id]"  class="col-1-4">
+    <div class="module hero">
+      <h4>{{product.name}}</h4>
+      <div class="wrap-img">
+        <img src={{product.link}}>
+      </div>
+    </div>
+  </a>
+</div>
